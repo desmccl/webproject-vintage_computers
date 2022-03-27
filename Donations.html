@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>Donations</title>
+        <link rel="stylesheet" href="style.css" >
+        </head>
+        <nav class="topnav" id="myTopnav"> 
+            <a href="index.html">Home</a> 
+            <a href="the80s.html">The 80s</a>
+            <a href="the90s.html">The 90s</a>
+            <a href="the2000s.html">The 2000s</a>
+            <a href="Survey.html">Favorite Computer Survey</a>
+            <a href="Donations.html" class="active">Donate a computer</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-bars"></i></a>
+        </nav>
+        
+        <body>
+            <script>
+                var year;
+                var userName;
+                var computer;
+
+                userName = prompt("What is your name?");
+                computer = prompt("What kind of computer will you donate?");
+                year = prompt("What year is this computer?");
+
+                document.write("Thank you for your donation, " + userName+ ". You donated a " + computer + " from " + year + " ! ")
+
+            </script>
+        </body>
+        <footer class="footer">
+            &copy; <a href="mailto:dmcclain1@student.egcc.edu">2021 Desiree McClain dmcclain1@student.egcc.edu</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>Favorite Computer Survey</title>
+        <link rel="stylesheet" href="style.css" >
+        <style>
+            fieldset {width: 350px;
+            border: 2px double #161aec;
+        padding: 15px;margin-bottom: 15px;
+     }
+
+     legend {font-family: 'Franklin Gothic Medium' , 'Arial Narrow' , Arial, sans-serif;
+     font-weight: bold;
+    }
+
+    label {font-family: 'Franklin Gothic Medium' , 'Arial Narrow' , Arial, sans-serif;
+font-weight: bold;
+font-style: italic;
+}
+        </style>
+        <script src="https://kit.fontawesome.com/90559772ee.js" crossorigin="anonymous"></script>
+        <script>
+            function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+        </script>
+        <style>
+h1 {text-align: center;}
+
+        </style>
+    </head>
+    <nav class="topnav" id="myTopnav"> 
+        <a href="index.html">Home</a> 
+        <a href="the80s.html">The 80s</a>
+        <a href="the90s.html">The 90s</a>
+        <a href="the2000s.html">The 2000s</a>
+        <a href="Survey.html" class="active">Favorite Computer Survey</a>
+        <a href="Donations.html">Donate a computer</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i></a>
+    </nav>
+    <body>
+        <h2>Survey</h2>
+        <form method="get">
+            <fieldset>
+                <legend>Visitor Information</legend>
+            <label>First Name: <input type="text" name="first" id="first"></label><p>
+            <label>Last Name: <input type="text" name="last" id="last"></label><p>
+            <label for="email">Email:</label> <input type="email" name="email" id="email"></p>
+            <label for="phone">Phone: </label> <input type="tel" name="phone" id="phone"></p>
+            </fieldset>
+            </form>
+            <br>
+            <h2>How satisfied were you with this site?</h2>
+            <form method="get">
+                <input type="radio" name="rating" id="Disappointed" value="Disappointed"> Disappointed<br>
+                <input type="radio" name="rating" id="Somewhat disappointed" value="Somewhat disappointed"> Somewhat disappointed<br>
+                <input type="radio" name="rating" id="Indifferent" value="green"> Indifferent<br>
+                <input type="radio" name="rating" id="Satisfied" value="Satisfied"> Satisfied<br>
+                <input type="radio" name="rating" id="Very Satisfied" value="Very Satisfied"> Very Satisfied<br>
+                <input type="submit" value="Submit"> &nbsp; <input type="reset">
+                </form>
+            <br>
+            <h2>Which years are your favorite?</h2>
+            <form method="get">
+            <input type="checkbox" name="1980" id="1980" value="yes">1980s<br>
+            <input type="checkbox" name="1990" id="1990" value="yes">1990s<br>
+            <input type="checkbox" name="2000" id="2000" value="yes">2000s<br>
+            <input type="submit" value="Submit"> &nbsp; <input type="reset">
+            </form>
+            <br>
+            <h2>Which was your favorite computer?</h2>
+            <form method="get">
+            <select size="1" name="favecomputer" id="favecomputer">
+                <option>Select Your Favorite Computer</option>
+                <option value="Apple Macintosh">Apple Macintosh</option>
+                <option value="Apple TAM">Apple TAM</option>
+                <option value="eMate 300">eMate 300</option>
+                <option value="iMac G3">iMac G3</option>
+                <option value="iMac G5">iMac G5</option>
+            </select>
+            </form>
+            <br>
+            <b><i>Comments:</i></b><br>
+        <textarea name="comments" id="comments" cols="50" Rows="4"></textarea>
+        </form>
+        <p>If you would like to make a donation of any of these computers on the next page, I will make a video exploring the capabilities of these devices!</p>
+
+        <br>
+
+        <footer class="footer">
+            &copy; <a href="mailto:dmcclain1@student.egcc.edu">2021 Desiree McClain dmcclain1@student.egcc.edu</a>
+        </footer>
+        
+    </body>
+</html>
